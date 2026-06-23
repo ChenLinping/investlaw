@@ -19,5 +19,6 @@
 - 新增个股仅限沪深主板。
 - 优先结合 `tasks/ai-premarket/portfolio/2026-06-22-holdings.md` 中的持仓和现金。
 - 所有 A 股买卖建议必须按 100 股整数手给出可执行股数。
-- 输出并保存到 `data/ai-premarket/runs/YYYY/MM/DD/early.md`。
+- 输出并保存到 `data/ai-premarket/runs/YYYY/MM/DD/YYYY-MM-DD-HHMMSS-early.md`，时间使用北京时间生成时刻，精确到秒。
+- 同一天多次运行必须新建文件，不得覆盖旧文件。
 - 运行结束后提交并推送本仓库。

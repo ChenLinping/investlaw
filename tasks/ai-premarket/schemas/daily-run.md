@@ -4,12 +4,14 @@
 
 ```text
 data/ai-premarket/runs/YYYY/MM/DD/
-├── early.md
-├── final.md
-└── sources.md       # 可选：集中记录引用来源
+├── YYYY-MM-DD-HHMMSS-early.md
+├── YYYY-MM-DD-HHMMSS-final.md
+└── YYYY-MM-DD-HHMMSS-sources.md       # 可选：集中记录引用来源
 ```
 
-## `early.md`
+文件名必须使用北京时间生成时刻，精确到秒。同一任务一天内多次运行时，不得覆盖旧文件。
+
+## `YYYY-MM-DD-HHMMSS-early.md`
 
 建议包含：
 
@@ -24,7 +26,7 @@ data/ai-premarket/runs/YYYY/MM/DD/
 9. 盘中验证清单；
 10. 关键来源。
 
-## `final.md`
+## `YYYY-MM-DD-HHMMSS-final.md`
 
 建议包含：
 
@@ -38,3 +40,5 @@ data/ai-premarket/runs/YYYY/MM/DD/
 8. 新增候选；
 9. 强势/震荡/弱势三套策略；
 10. 来源链接。
+
+复核版应读取同日目录中按文件名排序最新的 `*-early.md`，不得假设固定存在 `early.md`。

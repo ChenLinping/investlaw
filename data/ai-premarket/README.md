@@ -11,10 +11,12 @@ data/ai-premarket/
     └── YYYY/
         └── MM/
             └── DD/
-                ├── early.md
-                ├── final.md
-                └── sources.md
+                ├── YYYY-MM-DD-HHMMSS-early.md
+                ├── YYYY-MM-DD-HHMMSS-final.md
+                └── YYYY-MM-DD-HHMMSS-sources.md
 ```
+
+文件名使用北京时间生成时刻，精确到秒。这样每天多次推送会形成累积记录，不覆盖历史文件。
 
 ## 数据原则
 
